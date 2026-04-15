@@ -10,14 +10,15 @@ import org.testng.annotations.DataProvider;
         dryRun = false,
         plugin ={"pretty",
                 "html:target/html_report.html",
-                "json:target/json_report.json"
-        }
+                "json:target/json_report.json",
+                "rerun:target/failedExecution.txt"
 
-)
+        }
+        )
 public class TestRunner  extends AbstractTestNGCucumberTests {
-   /* @Override
+    @Override
     @DataProvider(parallel = true)
     public Object[][] scenarios(){
         return super.scenarios();
-    }*/
+    }
 }
