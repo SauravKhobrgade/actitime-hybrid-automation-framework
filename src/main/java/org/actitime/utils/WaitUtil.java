@@ -28,7 +28,4 @@ public class WaitUtil {
          return element.isDisplayed();
    }
 
-
-
-
 }

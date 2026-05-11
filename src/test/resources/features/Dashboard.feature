@@ -16,4 +16,3 @@ Feature: Dashboard page features
     Scenario: Verify dashboard TabNames
      Then Dashboard display 4 tabs
 
-
